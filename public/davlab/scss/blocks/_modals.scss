@@ -1,0 +1,230 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#2c3a3d, 0.7);
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    overflow-y: auto;
+    &.modal-show {
+      display: flex;
+      padding: 0 15px;
+    }
+    &-content {
+      background-color: $white;
+      max-width: 1350px;
+      width: 100%;
+      position: relative;
+      border-radius: 12px;
+      iframe {
+        width: 100%;
+        height: 800px;
+        border-radius: 12px;
+        @media all and (max-width: 1600px) {
+          height: 600px;
+        }
+        @media all and (max-width: 1200px) {
+          height: 400px;
+        }
+        @media all and (max-width: 767.98px) {
+          height: 350px;
+        }
+      }
+  
+      .modal-closer {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+        background: $white 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: none;
+        img {
+          width: 19px;
+          height: 19px;
+        }
+      }
+    }
+    &.call-modal {
+      .modal-content {
+        max-width: 810px;
+        @media all and (max-width: 991.98px) {
+          max-width: 670px;
+        }
+        @media all and (max-width: 575.98px) {
+          max-width: 318px;
+        }
+        border-radius: 6px;
+        .modal-header {
+          border-radius: 6px 6px 0 0;
+          padding: 30px 35px 22px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #F7F9FA;
+          margin-bottom: 19px;
+          @media all and (max-width: 575.98px) {
+            max-width: 318px;
+            padding: 16px 15px;
+          }
+          .modal-title {
+            font-size: 1.8rem;
+            line-height: 35px;
+            font-weight: 600;
+            @media all and (max-width: 575.98px) {
+              font-size: 1.4rem;
+              line-height: 35px;
+            }
+          }
+          .modal-closer {
+            position: static;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            padding: 14px;
+            box-shadow: none;
+            @media all and (max-width: 575.98px) {
+              width: 32px;
+              height: 32px;
+              padding: 10px;
+            }
+          }
+        }
+        .modal-body {
+          form {
+            .container {
+              padding: 0 35px;
+              @media all and (max-width: 575.98px) {
+                padding: 0 15px;
+              }
+            }
+          }
+          .modal-label {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 21px;
+            margin-bottom: 10px;
+            @media all and (max-width: 575.98px) {
+              font-size: 1.2rem;
+              line-height: 16px;
+              margin-bottom: 15px;
+            }
+          }
+          .modal-input-parent {
+            position: relative; 
+            &::after {
+              content: "+374";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 22px;
+              font-size: 1.8rem;
+              font-family: inherit;
+              font-weight: 400;
+              line-height: 24px;
+              border-right: 1px solid $mainBlack;
+              padding-right: 15px;
+              @media all and (max-width: 575.98px) {
+                font-size: 1.4rem;
+                line-height: 19px;
+              }
+            }
+            input {
+              padding: 18px 0 18px 90px;
+              display: block;
+              width: 100%;
+              height: 60px;
+              border-radius: 3px;
+              font-size: 1.8rem;
+              font-family: inherit;
+              font-weight: 400;
+              line-height: 24px;
+              border: 0.5px solid #D0D0D0;
+              &:focus {
+                outline: none;
+              }
+              @media all and (max-width: 575.98px) {
+                font-size: 1.4rem;
+                line-height: 19px;
+                height: 50px;
+              }
+            }
+          }
+          .or-call-number {
+            margin: 20px 0 15px; 
+            p {
+              font-size: 2.3rem;
+              line-height: 31px;
+              font-weight: 400;
+              @media all and (max-width: 991.98px) {
+                font-size: 1.8rem;
+                line-height: 24px;
+              }
+              @media all and (max-width: 575.98px) {
+                font-size: 1.4rem;
+                line-height: 19px;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 36px;
+              }
+              a {
+                font-size: 2.9rem;
+                font-weight: 700;
+                line-height: 38px;
+                color: $green;
+                text-decoration: none;
+                @media all and (max-width: 991.98px) {
+                  font-size: 2.3rem;
+                  line-height: 31px;
+                }
+                @media all and (max-width: 575.98px) {
+                  font-size: 1.6rem;
+                  line-height: 24px;
+                }
+              }
+            }
+          }
+          .modal-send-btn {
+            margin-bottom: 37px;
+            display: flex;
+            justify-content: flex-end;
+            @media all and (max-width: 575.98px) {
+              margin-bottom: 28px;
+            }
+            button {
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 18px 66px;
+              border: none;
+              background-color: $green;
+              color: $white;
+              height: 60px;
+              border-radius: 3px;
+              font-size: 1.8rem;
+              line-height: 24px;
+              font-weight: 600;
+              @media all and (max-width: 575.98px) {
+                width: 100%;
+                height: 50px;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+  

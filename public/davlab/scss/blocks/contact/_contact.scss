@@ -1,0 +1,41 @@
+.contact-page {
+    background-color: $white;
+    @media all and (max-width: 991.98px) {
+      .container {
+        max-width: 100%;
+        padding: 0 68px;
+        @media all and (max-width: 767.98px) {
+          padding: 0 50px;
+        }
+        @media all and (max-width: 575.98px) {
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+  .contact-page-section {
+    position: relative;
+    height: calc(100vh - 125px);
+    overflow-y: hidden;
+    @media all and (max-width: 991.98px) {
+      height: auto;
+      overflow: visible;
+      .container {
+        .row {
+          > [class|="col"] {
+            max-width: 100%;
+            flex: 0 0 100%;
+          }
+        }
+      }
+    }
+    @import "./left-side";
+    @import "./right-side";
+      @media all and (max-width: 1919.98px) {
+        .small-desktop-side-by-side {
+          display: flex;
+          justify-content: space-between;
+        }
+      } 
+  }
+  

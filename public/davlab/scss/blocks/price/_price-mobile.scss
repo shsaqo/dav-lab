@@ -1,0 +1,153 @@
+@media all and (min-width: 1200px) {
+    .in-desktop-hide-row {
+        display: none;
+    }
+}
+@media all and (max-width: 1199.98px) {
+    .paper-printer {
+        display: none;
+    }
+    .in-mobile-hide-row {
+        display: none;
+    }
+    .all-price-item {
+        top: 160px;
+    }
+    .search-form {
+        form {
+            .container
+            .row {
+                .col-4 {
+                    padding-right: 0;
+                }
+                .col-7 {
+                    padding-left: 0;
+                }
+                input {
+                    border-radius: 6px 0 0 6px;
+                }
+                button {
+                    border-radius: 0 6px 6px 0;
+                    padding: 12px;
+                    height: 50px;
+                    span {
+                        display: none;
+                    }
+                    svg {
+                        display: block;
+                        width: 27px;
+                        height: 27px;
+                        min-width: 27px;
+                        min-height: 27px;
+                        max-width: 27px;
+                        max-height: 27px;
+                        path {
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .price-page  {
+        .in-mobile-12 {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        .analyze-and-price-section {
+            margin-top: 70px;
+            .row.in-desktop-hide-row {
+                .price-tabs-controllers {
+                    background-color: transparent;
+                    .sidebar-tab {
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                        border-left: 6px solid $green;
+                        border-radius: 3px 0 0 3px;
+                        .tab-chooser {
+                            padding-left: 20px;
+                            border-radius: 0 3px 3px 0;
+                            &:hover {
+                                background-color: $white;
+                            }
+                            &.active {
+                                background-color: rgba(8, 166, 109, 0.2);
+                            }
+                        }
+                    }
+                }
+            }
+            .price-tabs-content {
+                overflow: unset;
+            }
+        }
+    }
+    
+}
+@media all and (max-width: 991.98px) {
+    .price-page {
+        .analyze-and-price-section {
+            .price-tabs-content {
+                .checbox-and-text {
+                    .analyze-one-item {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .price-big-information-content {
+            .big-info-text {
+                font-size: 1.2rem;
+            }
+            .big-info-icon {
+                svg {
+                    width: 39px;
+                    height: 39px;
+                    min-width: 39px;
+                    min-height: 39px;
+                    max-width: 39px;
+                    max-height: 39px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 575.98px) {
+    .price-page {
+        .analyze-and-price-section {
+            margin-top: 30px;
+            .container {
+                .row {
+                    .col-5 {
+                        max-width: 100%;
+                        flex: 0 0 100%;
+                    }
+                }
+            }
+            .all-price-item {
+                top: 280px;
+            }
+            .search-form {
+                .container {
+                    .row  {
+                        .col-4  {
+                            max-width: 81%;
+                            flex: 0  0 81%;
+                        }
+                        .col-7 {
+                            max-width: 19%;
+                            flex: 0 0 19%;
+                        }
+                        input {
+                            &:focus {
+                                outline: none;
+                                border: 2px solid $green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

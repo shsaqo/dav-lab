@@ -1,0 +1,41 @@
+.bread-crumb-section {
+    margin-top: 12px;
+    ul.breadcrumbs-list {
+      li {
+        display: inline;
+        + li {
+          &:before {
+            padding: 0 6px 0 0;
+            color: #a2a2a2;
+            content: "/\00a0";
+          }
+        }
+        a {
+          color: #a2a2a2;
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: 400;
+          font-family: inherit;
+          line-height: 28px;
+        }
+        &:last-child {
+          a {
+            color: $green;
+            text-decoration: underline;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+    @media all and (max-width: 767.98px) {
+      .container {
+        .row {
+          .col-7 {
+            max-width: 100%;
+            flex: 0 0 100%;
+          }
+        }
+      }
+    }
+  }
+  

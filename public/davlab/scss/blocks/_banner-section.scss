@@ -1,0 +1,100 @@
+.banner-section {
+  &-bg {
+    background-image: url('../img/banner-bg.png');
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    .banner-items {
+      img {
+        transition: 0.5s;
+      }
+      &:hover {
+        img {
+          transform: rotate(10deg);
+        }
+      }
+    }
+    @media all and (max-width: 991.98px) {
+      background-image: url('../img/banner-bg-small-screen.png');
+      height: 340px;
+    }
+    @media all and (max-width: 767.98px) {
+      background-image: url('../img/banner-bg-small-screen.png');
+      height: auto;
+    }
+    .container {
+      height: 100%;
+      .row {
+        height: 100%; 
+        text-align: center;
+        align-items: center;
+        @media all and (max-width: 991.98px) {
+          height: auto;
+          justify-content: center;
+          .col-3 {
+            margin-top: 25px;
+            display: flex;
+            max-width: 50%;
+            flex: 0 0 50%;
+            align-items: center;
+            .banner-items {
+              width: 110px;
+              height: 110px;
+              min-width: 110px;
+              min-height: 110px;
+            }
+            .banner-items__name {
+              margin-left: 20px;
+            }
+          }
+        }
+        @media all and (max-width: 767.98px) {
+          .col-3 {
+            flex-direction: column;
+            .banner-items {
+              width: 92px;
+              height: 92px;
+              min-width: 92px;
+              min-height: 92px;
+            }
+            .banner-items__name {
+              margin-left: 0;
+              &.pb-long {
+                padding-bottom: 70px;
+              }
+            }
+          }
+        }
+        @media all and (max-width: 767.98px) {
+          .col-3 {
+            .banner-items__name {
+              h3 {
+                font-size: 1.4rem;
+                line-height: 19px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .banner-items {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18.5px;
+      background-color: $white;
+      border-radius: 12px;
+      box-shadow: 0 3px 6px rgba($mainBlack, 0.16);
+    }
+    .banner-items__name {
+      padding-bottom: 20px;
+      h3 {
+        font-size: 2rem;
+        line-height: 26px;
+        font-weight: 600;
+        margin-top: 10px;
+        color: $white;
+      }
+    }
+  }
+}

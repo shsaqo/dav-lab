@@ -1,0 +1,23 @@
+<?php
+return [
+    'address' => 'Address',
+    'city_address-1' => 'Yerevan',
+    'local_address-1' => 'Davtashen 3rd distr., 10/3',
+    'local_address_entrance' => 'Entrance from Sasna Tsrer street',
+    'tel' => 'Tel.:',
+    'mob_tel' => 'բջջ.',
+    'email' => 'E-mail:',
+    'work_day_hours' => 'Working hours',
+    'mon_fry' => 'Mon-Fri',
+    'sat' => 'Sat',
+    'city_address_covid' => 'Yerevan,  COVID-19 center',
+    'local_address-2' => 'Davtashen, Sasna Tsrer 7/1',
+    'city_address-3' => 'Vanadzor',
+    'local_address-3' => 'Myasnikyan 23-27/1',
+    'city_address-4' => 'Gyumri',
+    'local_address-4' => 'V. Sargsyan 2 build․, 3/1',
+    'city_address-5' => 'Sevan',
+    'local_address-5' => 'Sayat-Nova 4/8-10',
+    'city_address-6' => 'Republic of Artsakh, Stepanakert',
+    'local_address-6' => 'V. Sargsyan 3/43',
+];

@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "SegoeUI";
+    src: local("Segoe UI"),
+      url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2)
+        format("woff2"),
+      url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff)
+        format("woff"),
+      url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf)
+        format("truetype");
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: "SegoeUI";
+    src: local("Segoe UI Semibold"),
+      url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2)
+        format("woff2"),
+      url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff)
+        format("woff"),
+      url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf)
+        format("truetype");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "SegoeUI";
+    src: local("Segoe UI Bold"),
+      url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2)
+        format("woff2"),
+      url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff)
+        format("woff"),
+      url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf)
+        format("truetype");
+    font-weight: 700;
+  }
+  html {
+    font-size: 10px;
+  }
+  body {
+    font-family: "SegoeUI";
+    font-size: 1.6rem;
+    background-color: #eeeeee;
+    &.scroled-content {
+      padding-top: 70px;
+    }
+    &.overflow-hidden {
+      overflow: hidden;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+  ul,
+  ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .section-title {
+    font-family: inherit;
+    font-size: 2.2rem;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: $mainBlack;
+    margin-bottom: 40px;
+    text-align: center;
+    @media all and (max-width: 991.98px) {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+    @media all and (max-width: 575.98px) {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+  }
+  .p-0 {
+    padding: 0 !important;
+  }
+  .container {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media all and (max-width: 1199.98px) and (min-width: 992px) {
+      max-width: 960px;
+    }
+    @media all and (max-width: 991.98px) and (min-width: 768px) {
+      max-width: 700px;
+    }
+    @media all and (max-width: 767.98px) and (min-width: 576px) {
+      max-width: 540px;
+    }
+    @media all and (max-width: 575.98px) {
+      max-width: 350px;
+    }
+  }
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    &.no-gutters {
+      margin: 0;
+      [class|="col"] {
+        padding: 0;
+      }
+    }
+  }
+  [class|="col"] {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .page {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+  .footer {
+    margin-top: auto;
+  }
+  .col-1 {
+    max-width: 8.3333333333%;
+    flex: 0 0 8.3333333333%;
+  }
+  .col-2 {
+    max-width: 16.6666666667%;
+    flex: 0 0 16.6666666667%;
+  }
+  .col-3 {
+    max-width: 25%;
+    flex: 0 0 25%;
+  }
+  .col-4 {
+    max-width: 33.3333333333%;
+    flex: 0 0 33.3333333333%;
+  }
+  .col-5 {
+    max-width: 41.6666666667%;
+    flex: 0 0 41.6666666667%;
+  }
+  .col-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .col-7 {
+    max-width: 58.333333%;
+    flex: 0 0 58.333333%;
+  }
+  .col-8 {
+    max-width: 66.6666666667%;
+    flex: 0 0 66.6666666667%;
+  }
+  .col-9 {
+    max-width: 75%;
+    flex: 0 0 75%;
+  }
+  .col-10  {
+    max-width: 83.333333%;
+    flex: 0 0 83.333333%;
+  }
+  .col-11 {
+    max-width: 91.666667%;
+    flex: 0 0 91.666667%;
+  }
+  .col-20-percent {
+    padding: 0 15px;
+    max-width: 276px / 1380px * 100%;
+    flex: 0 0 276px / 1380px * 100%;
+  }
+  
+  .player-item {
+    width: 168px;
+    height: 120px;
+  }

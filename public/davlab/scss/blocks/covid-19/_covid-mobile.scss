@@ -1,0 +1,464 @@
+.covid-page {
+    .covid-hero-section {
+      @media all and (max-width: 1200px) and (min-width: 768px) {
+        height: 268px;
+      }
+      @media all and (max-width: 767.98px) {
+        height: auto;
+      }
+      .covid-hero-image-parent {
+        display: none;
+      }
+      .before-title-bacteria,
+      .after-descr-bacteria,
+      .group-1,
+      .man-group,
+      .man-shape,
+      .bottles-group,
+      .bottles-shape,
+      .small-items-group,
+      .light-bacteria,
+      .light-bacteria-right {
+        @media all and (max-width: 1200px) {
+          display: none;
+        }
+      }
+      .covid-hero-image-parent {
+        @media all and (max-width: 1200px) {
+          display: block;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .container {
+        .row {
+          @media all and (max-width: 1200px) and (min-width: 768px) {
+            .col-7 {
+              margin-top: 30px;
+              flex: 1 0 365 / 760 * 100%;
+              padding-right: 0;
+              // max-width: 365 / 760 * 100%;
+            }
+            .col-5 {
+              flex: 0 0 340 / 760 * 100%;
+              max-width: 340 / 760 * 100%;
+            }
+          }
+          @media all and (max-width: 767.98px) {
+            .col-7,
+            .col-5 {
+              flex: 0 0 100%;
+              max-width: 100%;
+            }
+            .col-7 {
+              order: 1;
+            }
+            .col-5 {
+              order: 0;
+            }
+          }
+          @media all and (max-width: 575.98px) {
+            .col-7 {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+      .hero-title-and-descr {
+        .hero-title {
+          @media all and (max-width: 1200px) and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 2.6rem;
+            line-height: 35px;
+            margin-bottom: 12px;
+            span {
+              font-size: 3.6rem;
+              line-height: 48px;
+            }
+          }
+          @media all and (max-width: 767.98px) and (min-width: 576px) {
+            font-size: 2rem;
+            text-align: center;
+          }
+          @media all and (max-width: 575.98px) {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+          }
+        }
+        .hero-descr {
+          @media all and (max-width: 1200px) and (min-width: 576px) {
+            font-size: 1.6rem;
+            line-height: 24px;
+            font-weight: 400;
+          }
+          @media all and (max-width: 767.98px) and (min-width: 576px) {
+            text-align: center;
+          }
+          @media all and (max-width: 575.98px) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .covid-services {
+      @media all and (max-width: 575.98px) {
+        padding: 30px 0;
+      }
+      @media all and (max-width: 1200px) {
+        .row {
+          .content-container {
+            .content-item {
+              .content-title {
+                font-size: 1.8rem;
+                margin-top: 32px;
+              }
+            }
+            .row {
+                .text-list-container {
+                  .text-list {
+                    &__item {
+                      margin-bottom: 15px;
+                      p {
+                        font-size: 1.6rem;
+                      }
+                    }
+                  }
+                }
+              }
+          }
+        }
+      }
+      @media all and (max-width: 991.98px) {
+        .row {
+          .content-container {
+            .row {
+              [class|="col"] {
+                &:first-child {
+                  max-width: 60%;
+                flex: 0 0 60%;
+                }
+                max-width: 40%;
+                flex: 0 0 40%;
+              }
+                .text-list-container {
+                  .text-list {
+                    &__item {
+                      margin-bottom: 0;
+                      p {
+                        font-size: 1.6rem;
+                      }
+                    }
+                  }
+                }
+              }
+          }
+        }
+      }
+      @media all and (max-width: 767.98px) {
+        .row {
+          .content-container {
+            .row {
+              text-align: center;
+              [class|="col"] {
+                &:first-child {
+                  text-align: left;
+                  max-width: 100%;
+                  flex: 0 0 100%;
+                }
+                max-width: 100%;
+                flex: 0 0 100%;
+              }
+                .text-list-container {
+                  .text-list {
+                    &__item {
+                      margin-bottom: 0;
+                      p {
+                        font-size: 1.6rem;
+                      }
+                    }
+                  }
+                }
+              }
+          }
+        }
+      }
+      @media all and (max-width: 575.98px) {
+        .row {
+          .content-container {
+            border-radius: 6px;
+            padding: 0;
+            .content-item {
+              .content-title {
+                font-size: 1.6rem;
+                margin-top: 16px;
+              }
+            }
+            .row {
+              [class|="col"] {
+                &.col-10 {
+                  border-top: 0.5px solid rgba($mainBlack, 0.3);
+                }
+                flex: 0 0 100%;
+                max-width: 100%;
+                .text-list-container {
+                  padding-top: 15px;
+                  padding-bottom: 28px;
+                  .text-list {
+                    &__item {
+                      margin-bottom: 0;
+                      p {
+                        font-size: 1.4rem;
+                        line-height: 28px;
+                      }
+                    }
+                  }
+                }
+                .with-icon-list-container {
+                  .with-icon-list {
+                    &__item {
+                      .icon-item {
+                        max-width: 46px;
+                        max-height: 46px;
+                        width: 46px;
+                        min-width: 46px;
+                        min-height: 46px;
+                        img {
+                          max-height: 28px;
+                        }
+                      }
+  
+                      margin-bottom: 27px;
+                      p {
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                        line-height: 22px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .covid-test-for-all-countries {
+      background-color: #fff;
+      margin-bottom: 50px;
+      @media all and (max-width: 1199.98px) {
+        h2 {
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 24px;
+          padding: 25px 0;
+        }
+      }
+      @media all and (max-width: 576px) {
+        h2 {
+          font-size: 1.2rem;
+          display: flex;
+          img {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            min-height: 32px;
+            max-width: 32px;
+            min-width: 32px;
+            margin-right: 16px;
+            }
+        }
+      }
+    }
+    .covid-price-item {
+      @media all and (max-width: 575.98px) {
+        margin-bottom: 30px;
+      }
+      @media all and (max-width: 1200px) and (min-width: 768px) {
+        .price-item {
+          border-radius: 6px;
+          &:first-child {
+            border-radius: 6px;
+          }
+          .price-content {
+            padding: 13px 1px;
+            .price-name,
+            .current-price {
+              font-size: 1.6rem;
+              line-height: 22px;
+            }
+          }
+        }
+        .all-price-descr {
+          p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 22px; 
+            span {
+              color: $green;
+            }
+          }
+        }
+      }
+      @media all and (max-width: 767.98px) and (min-width: 576px) {
+        .price-item {
+          border-radius: 6px;
+          &:first-child {
+            border-radius: 6px;
+          }
+          .price-content {
+            padding: 13px 1px;
+            .price-name,
+            .current-price {
+              font-size: 1.4rem;
+              line-height: 22px;
+            }
+          }
+          .all-price-descr {
+            p {
+              font-size: 1.4rem;
+              font-weight: 600;
+              line-height: 22px; 
+              span {
+                color: $green;
+              }
+            }
+          }
+        }
+      }
+      @media all and (max-width: 575.98px) {
+        .price-item {
+          border-radius: 6px;
+          &:first-child {
+            border-radius: 6px;
+          }
+          .price-content {
+            padding: 13px 0;
+            flex-direction: column;
+            .price-name,
+            .current-price {
+              font-size: 1.4rem;
+              line-height: 22px;
+            }
+            .current-price {
+              margin-left: auto;
+              font-size: 1.8rem;
+            }
+          }
+        }
+        .all-price-descr {
+          p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 22px; 
+            span {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+    .covid-contact-section {
+      @media all and (max-width: 1200px) and (min-width: 768px) {
+        .contact-information {
+          .contact-numbers,
+          .contact-email {
+            img {
+              max-width: 28px;
+              width: 100%;
+            }
+            a {
+              font-size: 1.4rem;
+              line-height: 28px;
+              &:not(:last-child) {
+                margin-right: 16px;
+              }
+            }
+          }
+        }
+      }
+      @media all and (max-width: 767.98px) and (min-width: 576px) {
+        .contact-information {
+          .contact-numbers,
+          .contact-email {
+            img {
+              max-width: 28px;
+              width: 100%;
+            }
+            a {
+              font-size: 1.3rem;
+              line-height: 28px;
+              &:not(:last-child) {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+      @media all and (max-width: 575.98px) {
+        display: none;
+        .contact-information {
+          padding: 21px 0 17px;
+          flex-direction: column;
+          align-items: flex-start;
+          .contact-numbers,
+          .contact-email {
+            flex-wrap: wrap;
+            img {
+              max-width: 28px;
+              width: 100%;
+            }
+            a {
+              font-size: 1.4rem;
+              line-height: 28px;
+              &:not(:last-child) {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media all and (max-width: 991.98px) {
+      .branches-section {
+        .container {
+          .row {
+            .col-3 {
+              max-width: 50%;
+              flex: 0 0 50%;
+            }
+          }
+        }
+        .swiper-branches-item {
+          margin-top: 30px;
+        }
+      }
+    }
+    @media all and (max-width: 767.98px) {
+      .branches-section {
+        .container {
+          .row {
+            .col-3 {
+              max-width: 100%;
+              flex: 0 0 100%;
+            }
+          }
+        }
+        .swiper-branches-item {
+          margin-top: 30px;
+          min-height: unset;
+        }
+      }
+    }
+    .branches-section {
+      @media all and (max-width: 575.98px) {
+        background-color: transparent;
+        .swiper-branches-item {
+          background-color: $white;
+        }
+      }
+    }
+  }
+  

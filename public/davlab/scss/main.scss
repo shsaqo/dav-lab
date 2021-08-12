@@ -1,0 +1,42 @@
+@import './_vars';
+@import './normilize';
+@import './_base';
+@import './blocks/header';
+@import './blocks/hero-section';
+@import './blocks/our-services-section';
+@import './blocks/banner-section';
+@import './blocks/news-section';
+@import './blocks/branches-section';
+@import './blocks/partners-section';
+@import './blocks/footer';
+@import './blocks/modals';
+@import './blocks/breadcrumbs';
+// NEWS
+@import './blocks/news/allnews';
+@import './blocks/news/news-single';
+// NEWS END
+// ABOUT 
+@import './blocks/about/about';
+// ABOUT END
+// CONTACT
+@import './blocks/contact/contact';
+// CONTACT END
+// COVID-19
+@import './blocks/covid-19/covid';
+// COVID-19 END
+// PPRICE AND ANALYZE
+@import './blocks/price/price';
+// PPRICE AND ANALYZE END
+// PAPER PAGE
+@import './blocks/paper-page/paper-page';
+// PAPER PAGE END
+// 404 PAGE
+@import './blocks/404/404';
+// 404 PAGE END
+// login PAGE
+@import './blocks/login/login';
+// login PAGE END
+// print PAGE
+@import './blocks/print/print';
+// print PAGE END
+

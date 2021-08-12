@@ -1,0 +1,362 @@
+.covid-page {
+  .swiper-branches-item {
+    margin-bottom: 30px;
+  }
+    .bread-crumb-section {
+      margin-top: 0;
+      padding-top: 12px;
+      background-color: $white;
+    }
+    .covid-hero-section {
+      background-color: $white;
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .container,
+      .row {
+        height: 100%;
+        .col-7 {
+          margin-top: 94px;
+        }
+      }
+      .hero-title-and-descr {
+        .hero-title {
+          font-size: 3.2rem;
+          line-height: 43px;
+          font-weight: 600;
+          color: $mainBlack;
+          margin-bottom: 25px;
+          span {
+            color: $white;
+            background-color: $green;
+            padding: 0 5px 5px;
+          }
+        }
+        .hero-descr {
+          font-size: 1.8rem;
+          line-height: 24px;
+          font-weight: 400;
+        }
+      }
+      .group-parent {
+        position: relative;
+      }
+      .group-1 {
+        position: absolute;
+        top: -20px;
+        left: -180px;
+        background-image: url("../img/icons/covid-page/group-1.svg");
+        width: 132px;
+        height: 117px;
+      }
+      .man-group {
+        position: absolute;
+        background-image: url("../img/icons/covid-page/men-group.svg");
+        width: 342px;
+        height: 342px;
+        top: -25px;
+        left: -65px;
+        z-index: 1;
+      }
+      .man-shape {
+        position: absolute;
+        background-image: url("../img/icons/covid-page/animated-icons/shape.svg");
+        width: 233px;
+        height: 244px;
+        z-index: 0;
+        top: -15px;
+        left: -10px;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-name: rotated-shape;
+      }
+      .bottles-group {
+        position: absolute;
+        background-image: url("../img/icons/covid-page/bottles-group.svg");
+        background-repeat: no-repeat;
+        width: 129px;
+        height: 171px;
+        bottom: 45px;
+        right: 140px;
+        z-index: 1;
+      }
+      .bottles-shape {
+        position: absolute;
+        background-image: url("../img/icons/covid-page/animated-icons/gray-shape.svg");
+        background-repeat: no-repeat;
+        width: 238px;
+        height: 235px;
+        right: 15px;
+        bottom: 40px;
+        animation-name: rotated-shape;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        z-index: 0;
+      }
+      .small-items-group {
+        position: absolute;
+        width: 240px;
+        height: 170px;
+        background-image: url("../img/icons/covid-page/small-items-group.svg");
+        top: -20px;
+        left: 165px;
+      }
+      .light-bacteria {
+        position: absolute;
+        background-image: url("../img/icons/covid-page/animated-icons/light-rotated-bacteria.svg");
+        background-repeat: no-repeat;
+        width: 115px;
+        height: 115px;
+        left: -175px;
+        bottom: 50px;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-name: rotate-arond;
+      }
+      .light-bacteria-right {
+        position: absolute;
+        background-image: url("../img/icons/covid-page/animated-icons/light-rotated-bacteria.svg");
+        width: 80px;
+        height: 80px;
+        right: 60px;
+        top: 10px;
+        background-size: contain;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-name: rotate-arond;
+      }
+      .before-title-bacteria {
+        position: absolute;
+        background-image: url("../img/icons/covid-page/animated-icons/light-rotated-bacteria.svg");
+        width: 40px;
+        height: 40px;
+        left: 30px;
+        top: -50px;
+        background-size: contain;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-name: rotate-arond;
+      }
+      .after-descr-bacteria {
+        position: absolute;
+        background-image: url("../img/icons/covid-page/animated-icons/gray-bacteria.svg");
+        width: 40px;
+        height: 40px;
+        left: 180px;
+        bottom: 100px;
+        background-size: contain;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-name: rotate-arond;
+      }
+      @keyframes rotate-arond {
+        from {
+          transform: rotate(0) translateX(15px);
+        }
+        to {
+          transform: rotate(180deg) translateX(-80px);
+        }
+      }
+      @keyframes rotated-shape {
+        from {
+          transform: rotate(0) translateY(10px);
+        }
+        to {
+          transform: rotate(30deg) translate(-20px, 10px);
+        }
+      }
+    }
+    .covid-services {
+      padding: 50px 0;
+      .content-container {
+        border-radius: 20px;
+        background-color: $white;
+        box-shadow: 0 3px 23px rgba($mainBlack, 0.16);
+        padding: 20px 40px;
+        .content-item {
+          .content-title {
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 30px;
+            margin-bottom: 30px;
+          }
+          .text-list-container {
+            .text-list {
+              &__item {
+                margin-bottom: 36px;
+                p {
+                  font-size: 1.8rem;
+                  line-height: 28px;
+                  font-weight: 400;
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+          .with-icon-list-container {
+            .with-icon-list {
+              &__item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 36px;
+                &:hover {
+                  .icon-item {
+                    img {
+                      transform: rotate(15deg);
+                    }
+                  }
+                }
+                .icon-item {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-color: $green;
+                  min-width: 60px;
+                  min-height: 60px;
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 100%;
+                  padding: 10px;
+                  margin-right: 20px;
+                  img {
+                    transition: 0.5s;
+                  }
+                }
+                p {
+                  font-size: 1.6rem;
+                  line-height: 28px;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .covid-test-for-all-countries {
+      background-color: #fff;
+      margin-bottom: 50px;
+      h2 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        line-height: 37px;
+        padding: 25px 0;
+        img {
+          width: 50px;
+          height: 50px;
+          min-width: 50px;
+          min-height: 50px;
+          max-width: 50px;
+          min-width: 50px;
+          margin-right: 22px;
+        }
+      }
+    }
+    .covid-price-item {
+      margin-bottom: 57px;
+      .price-item {
+        background-color: $green;
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        &:first-child {
+          border-radius: 20px 20px 0 0;
+          border-bottom: 1px solid $white;
+        }
+        .price-content {
+          padding: 35px 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .price-name {
+          margin-bottom: 0;
+          font-size: 2.2rem;
+          font-weight: 600;
+          line-height: 28px;
+          color: $white;
+        }
+        .current-price {
+          margin-bottom: 0;
+          font-size: 2.2rem;
+          font-weight: 600;
+          line-height: 28px;
+          color: $white;
+        }
+      }
+      .all-price-descr {
+        p {
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 28px; 
+          margin-top: 10px;
+          span {
+            color: $green;
+          }
+          img {
+            margin-right: 10px;
+            width: 22px;
+            height: 22px;
+            min-width: 2px;
+            min-height: 22px;
+            max-width: 22px;
+            max-height: 22px;
+          }
+        }
+      }
+    }
+    .covid-contact-section {
+      .contact-information {
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contact-numbers {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          a {
+            display: flex;
+            align-items: center;
+            color: $mainBlack;
+            font-size: 2.2rem;
+            line-height: 28px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+            img {
+              margin-right: 10px;
+            }
+            &:not(:last-child) {
+              margin-right: 54px;
+            }
+            &:hover {
+              color: $green;
+              text-decoration: none;
+            }
+          }
+        }
+        .contact-email {
+          a {
+            display: block;
+            color: $green;
+            font-size: 2.2rem;
+            line-height: 28px;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  @import "./covid-mobile";
+  

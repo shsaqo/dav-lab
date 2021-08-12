@@ -1,0 +1,94 @@
+.item {
+    width: 168px;
+    height: 120px;
+    border-radius: 6px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+        .bottle2 {
+            animation-name: bottles;
+        }
+    }
+}
+.bottle1 {
+
+    position: relative;
+    padding: 0 2px;
+}
+.bottle2 {
+    padding: 0 2px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.line {
+    position: absolute;
+    width: 6px;
+    border-radius: 25px;
+    background-color: $green;
+    animation-name: line-like-water;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-iteration-count: infinite;
+    transform: rotate(180deg);
+    left: 30%;
+    top: -30px;
+}
+
+@keyframes bottles {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+    25% {
+        transform: translate(0, -90%) rotate(0);
+    }
+    30% {
+        transform: translate(0, -90%) rotate(-90deg);
+    }
+    40% {
+        transform: translate(0, -90%) rotate(-90deg);
+    }
+    50% {
+        transform: translate(0, -90%) rotate(-90deg);
+    }
+    60% {
+        transform: translate(0, -90%) rotate(-90deg);
+    }
+    75% {
+        transform: rotate(0) translateY(-90%);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+@keyframes line-like-water {
+    0% {
+        height: 0;
+    }
+    25% {
+       height: 0;
+    }
+    30% {
+       height: 15px;
+    }
+    40% {
+        height: 35px;
+    }
+    50% {
+        height: 15px;
+    }
+    60% {
+        height: 0;
+    }
+    75% {
+        height: 0;
+    }
+    100% {
+        height: 0;
+    }
+}

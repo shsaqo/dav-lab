@@ -1,0 +1,147 @@
+.print-page {
+    .title {
+        font-size: 1.8rem;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 7px;
+    }
+    .print-container {
+        background-color: $white;
+        max-width: 936px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 40px 54px;
+        .print-header {
+            position: relative;
+            display: flex;
+            margin-bottom: 62px;
+            justify-content: center;
+            .print-logo {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .print-hospital-info {
+                text-align: center;
+                margin-top: 25px;
+                .print-hostpital-logo {
+                    width: 204px;
+                    margin: 0 auto;
+                    img {
+                        text-align: center;
+                    }
+                }
+                .print-hoospital-name {
+                    padding: 7px 0;
+                     h1 {
+                        font-family: inherit;
+                        font-size: 2.2rem;
+                        font-weight: 700;
+                        line-height: 30px; 
+                     }
+                }
+                .print-hospital-descr {
+                    p {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        .main {
+            section {
+                margin-bottom: 30px;
+            }
+            ol, ul {
+                padding: 0;
+            }
+            ol {
+                list-style-type: decimal;
+                list-style-position: inside;
+            }
+             p, li {
+                 font-size: 2.2rem;
+                 font-weight: 400;
+                 line-height: 30px;
+             }
+            .pacient-name-and-date {
+                display: flex;
+                justify-content: space-between;
+                .paceint_name-content {
+                    max-width: 50%;
+                    flex: 0 0 50%;
+                }
+                .paceint_birthday-content {
+                    max-width: 50%;
+                    flex: 0 0 50%;
+                    text-align: right;
+                }
+            }
+            .doctors-name-section {
+                .doctors__name {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    .print-buttons-container {
+        padding: 0 0 54px;
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        margin-top: 25px;
+        align-items: center;
+        button, a {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            text-decoration: none;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            a {
+                display: flex;
+                background-color: $white;
+                align-items: center;
+                justify-content: center;
+                padding: 14px;
+                border-radius: 6px;
+                margin-left: 7px;
+                text-decoration: none;
+                &:last-child {
+                    background-color: $green;
+                    color: $white;
+                    font-size: 1.8rem;
+                    line-height: 24px;
+                    font-weight: 600;
+                    box-shadow: 0 3px 6px rgba($mainBlack, 0.16);
+                    img {
+                       padding-right: 7px;
+                       margin-right: 16px;
+                       border-right: 1px solid $white;
+                    }
+                }
+
+            }
+        }
+        .to-back-btn {
+            .print-go-back {
+                font-size: 1.6rem;
+                line-height: 21px;
+                font-weight: 600;
+                color: $mainBlack;
+                svg {
+                    margin-right: 11px;
+                }
+            }
+        }
+    }
+@media only print {
+    .print-buttons-container {
+        display: none;
+    }
+}
+}
